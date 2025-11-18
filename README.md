@@ -1,6 +1,14 @@
 # ActivityMonitor
 监控北京交通大学”研究生素养实践学分管理系统“的新活动
 
+## 环境
+```
+python=3.9
+pyjwt==2.10.1
+selenium==4.36.0
+```
+特别的，需要安装chrome driver，参考https://blog.csdn.net/qq_43948440/article/details/141190121
+
 ## 配置
 配置文件为Main.py
 ```
@@ -17,4 +25,6 @@ SMTP_CONFIG = {
 ```
 ## 启动
 初次启动会自动获取网站令牌，需要等待chrome driver启动，时间大概几十秒，在弹出的网页手动登录一遍mis即可
-`python Main.py`
+```
+python Main.py
+```
