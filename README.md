@@ -3,7 +3,7 @@
 
 ## 配置
 配置文件为Main.py
-
+```
 BASE_URL = "http://yjszhsy.bjtu.edu.cn"  # 基础URL
 tokenfile = 'token.cfg'                  # token存放文件名，一般不用改
 sno = '23xxxxxx'                         # 你的学号
@@ -14,7 +14,7 @@ SMTP_CONFIG = {
     'password': 'abc123',              # 邮箱授权码（不是登录密码）
     'recipient': '123456@qq.com'       # 收件人邮箱（还是你的邮箱）
 }
-
+```
 ## 启动
 初次启动会自动获取网站令牌，需要等待chrome driver启动，时间大概几十秒，在弹出的网页手动登录一遍mis即可
 `python Main.py`
